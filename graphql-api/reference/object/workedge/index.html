@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="WorkEdge GraphQL documentation">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>WorkEdge</title>
+    <link rel="stylesheet" href="/graphql-api/reference/assets/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>
+
+    // Add anchors on DOMContentLoaded
+    document.addEventListener("DOMContentLoaded", function(event) {
+      anchors.options = {
+        placement: 'left',
+        visible: 'hover',
+        icon: '¶'
+      };
+      anchors.add('h3');
+    });
+
+    </script>
+  </head>
+  <body>
+
+    <div id="wrap">
+      <div id="header">
+      </div>
+      <div id="sidebar">
+        <ul class="categories">
+  <li>
+    <ul class="menu-root">
+      <li>
+        <a href="/graphql-api/reference">GraphQL Reference</a>
+    </ul>
+  </li>
+
+  <li>
+    <p>Queries</p>
+    <ul class="menu-root">
+      <li>
+        <a href="/graphql-api/reference/operation/query/" class="sidebar-link">
+          Query
+        </a>
+      </li>
+      <li>
+        <a href="/graphql-api/reference/operation/mutation/" class="sidebar-link">
+          Mutation
+        </a>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <p><a href="/graphql-api/reference/object">Objects</a></p>
+    <ul class="menu-root">
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/activityconnection/" class="sidebar-link">
+          ActivityConnection
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/activityedge/" class="sidebar-link">
+          ActivityEdge
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/channel/" class="sidebar-link">
+          Channel
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/channelconnection/" class="sidebar-link">
+          ChannelConnection
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/channeledge/" class="sidebar-link">
+          ChannelEdge
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/channelgroup/" class="sidebar-link">
+          ChannelGroup
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/createrecordpayload/" class="sidebar-link">
+          CreateRecordPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/createreviewpayload/" class="sidebar-link">
+          CreateReviewPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/deleterecordpayload/" class="sidebar-link">
+          DeleteRecordPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/deletereviewpayload/" class="sidebar-link">
+          DeleteReviewPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/episode/" class="sidebar-link">
+          Episode
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/episodeconnection/" class="sidebar-link">
+          EpisodeConnection
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/episodeedge/" class="sidebar-link">
+          EpisodeEdge
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/multiplerecord/" class="sidebar-link">
+          MultipleRecord
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/pageinfo/" class="sidebar-link">
+          PageInfo
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/program/" class="sidebar-link">
+          Program
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/programconnection/" class="sidebar-link">
+          ProgramConnection
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/programedge/" class="sidebar-link">
+          ProgramEdge
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/record/" class="sidebar-link">
+          Record
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/recordconnection/" class="sidebar-link">
+          RecordConnection
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/recordedge/" class="sidebar-link">
+          RecordEdge
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/review/" class="sidebar-link">
+          Review
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/reviewconnection/" class="sidebar-link">
+          ReviewConnection
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/reviewedge/" class="sidebar-link">
+          ReviewEdge
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/status/" class="sidebar-link">
+          Status
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/updaterecordpayload/" class="sidebar-link">
+          UpdateRecordPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/updatereviewpayload/" class="sidebar-link">
+          UpdateReviewPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/updatestatuspayload/" class="sidebar-link">
+          UpdateStatusPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/user/" class="sidebar-link">
+          User
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/userconnection/" class="sidebar-link">
+          UserConnection
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/useredge/" class="sidebar-link">
+          UserEdge
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/work/" class="sidebar-link">
+          Work
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/workconnection/" class="sidebar-link">
+          WorkConnection
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/workedge/" class="sidebar-link">
+          WorkEdge
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/workimage/" class="sidebar-link">
+          WorkImage
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/__directive/" class="sidebar-link">
+          __Directive
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/__enumvalue/" class="sidebar-link">
+          __EnumValue
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/__field/" class="sidebar-link">
+          __Field
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/__inputvalue/" class="sidebar-link">
+          __InputValue
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/__schema/" class="sidebar-link">
+          __Schema
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/__type/" class="sidebar-link">
+          __Type
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+
+  <li>
+    <p><a href="/graphql-api/reference/operation/mutation">Mutations</a></p>
+    <ul class="menu-root">
+      
+      
+      <li>
+        <a href="/graphql-api/reference/mutation/createrecord/" class="sidebar-link">
+          createRecord
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/mutation/createreview/" class="sidebar-link">
+          createReview
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/mutation/deleterecord/" class="sidebar-link">
+          deleteRecord
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/mutation/deletereview/" class="sidebar-link">
+          deleteReview
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/mutation/updaterecord/" class="sidebar-link">
+          updateRecord
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/mutation/updatereview/" class="sidebar-link">
+          updateReview
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/mutation/updatestatus/" class="sidebar-link">
+          updateStatus
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+
+  <li>
+    <p><a href="/graphql-api/reference/interface">Interfaces</a></p>
+    <ul class="menu-root">
+      
+        
+        <li>
+          <a href="/graphql-api/reference/interface/node/" class="sidebar-link">
+            Node
+          </a>
+        </li>
+      
+    </ul>
+  </li>
+
+  <li>
+    <p><a href="/graphql-api/reference/enum">Enums</a></p>
+    <ul class="menu-root">
+      
+      
+      <li>
+        <a href="/graphql-api/reference/enum/activityaction/" class="sidebar-link">
+          ActivityAction
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/enum/activityorderfield/" class="sidebar-link">
+          ActivityOrderField
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/enum/episodeorderfield/" class="sidebar-link">
+          EpisodeOrderField
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/enum/media/" class="sidebar-link">
+          Media
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/enum/orderdirection/" class="sidebar-link">
+          OrderDirection
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/enum/programorderfield/" class="sidebar-link">
+          ProgramOrderField
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/enum/programstate/" class="sidebar-link">
+          ProgramState
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/enum/ratingstate/" class="sidebar-link">
+          RatingState
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/enum/recordorderfield/" class="sidebar-link">
+          RecordOrderField
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/enum/revieworderfield/" class="sidebar-link">
+          ReviewOrderField
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/enum/seasonname/" class="sidebar-link">
+          SeasonName
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/enum/statusstate/" class="sidebar-link">
+          StatusState
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/enum/workorderfield/" class="sidebar-link">
+          WorkOrderField
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/enum/__directivelocation/" class="sidebar-link">
+          __DirectiveLocation
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/enum/__typekind/" class="sidebar-link">
+          __TypeKind
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+
+  <li>
+    <p><a href="/graphql-api/reference/union">Unions</a></p>
+    <ul class="menu-root">
+      
+      
+      <li>
+        <a href="/graphql-api/reference/union/activityitem/" class="sidebar-link">
+          ActivityItem
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+
+  <li>
+    <p><a href="/graphql-api/reference/input_object">Input Objects</a></p>
+    <ul class="menu-root">
+      
+      
+      <li>
+        <a href="/graphql-api/reference/input_object/activityorder/" class="sidebar-link">
+          ActivityOrder
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/input_object/createrecordinput/" class="sidebar-link">
+          CreateRecordInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/input_object/createreviewinput/" class="sidebar-link">
+          CreateReviewInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/input_object/deleterecordinput/" class="sidebar-link">
+          DeleteRecordInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/input_object/deletereviewinput/" class="sidebar-link">
+          DeleteReviewInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/input_object/episodeorder/" class="sidebar-link">
+          EpisodeOrder
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/input_object/programorder/" class="sidebar-link">
+          ProgramOrder
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/input_object/recordorder/" class="sidebar-link">
+          RecordOrder
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/input_object/revieworder/" class="sidebar-link">
+          ReviewOrder
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/input_object/updaterecordinput/" class="sidebar-link">
+          UpdateRecordInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/input_object/updatereviewinput/" class="sidebar-link">
+          UpdateReviewInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/input_object/updatestatusinput/" class="sidebar-link">
+          UpdateStatusInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/input_object/workorder/" class="sidebar-link">
+          WorkOrder
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+
+  <li>
+    <p><a href="/graphql-api/reference/scalar">Scalars</a></p>
+    <ul class="menu-root">
+      
+      
+      <li>
+        <a href="/graphql-api/reference/scalar/boolean/" class="sidebar-link">
+          Boolean
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/scalar/datetime/" class="sidebar-link">
+          DateTime
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/scalar/float/" class="sidebar-link">
+          Float
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/scalar/id/" class="sidebar-link">
+          ID
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/scalar/int/" class="sidebar-link">
+          Int
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql-api/reference/scalar/string/" class="sidebar-link">
+          String
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+      </div>
+      <div id="content">
+
+        <h1>
+<a id="workedge" class="anchor" href="#workedge" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>WorkEdge</h1>
+<p>An edge in a connection.</p>
+<h2>
+<a id="fields" class="anchor" href="#fields" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fields</h2>
+<div class="field-entry ">
+  <span id="cursor" class="field-name">cursor (<code><a href="/graphql-api/reference/scalar/string">String!</a></code>)</span>
+  <div class="description-wrapper">
+  <p>A cursor for use in pagination.</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="node" class="field-name">node (<code><a href="/graphql-api/reference/object/work">Work</a></code>)</span>
+  <div class="description-wrapper">
+  <p>The item at the end of the edge.</p>
+  </div>
+</div>
+
+      </div>
+
+      <!-- mobile only -->
+      <div id="mobile-header">
+        <a class="menu-button"></a>
+        <a class="logo" href="/graphql-api/reference">
+
+        </a>
+      </div>
+      <div id="mobile-shade"></div>
+
+    </div>
+
+  </body>
+</html>
