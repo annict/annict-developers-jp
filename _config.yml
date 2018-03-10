@@ -41,3 +41,11 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+include:
+  - __directive # Exists in /graphql-api/reference
+  - __enumvalue # Exists in /graphql-api/reference
+  - __field # Exists in /graphql-api/reference
+  - __inputvalue # Exists in /graphql-api/reference
+  - __schema # Exists in /graphql-api/reference
+  - __type # Exists in /graphql-api/reference
