@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Query GraphQL documentation">
+    <meta name="description" content="query GraphQL documentation">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Query</title>
+    <title>query</title>
     <link rel="stylesheet" href="/graphql-api/reference/assets/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
     <script>
@@ -16,7 +16,7 @@
         visible: 'hover',
         icon: '¶'
       };
-      anchors.add('h3');
+      anchors.add('h2, h3, h4, h5, h6, .anchored');
     });
 
     </script>
@@ -698,7 +698,7 @@
 <h2>
 <a id="connections" class="anchor" href="#connections" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Connections</h2>
 <div class="field-entry ">
-  <span id="searchworks" class="field-name connection-name">searchWorks (<code><a href="/graphql-api/reference/object/workconnection">WorkConnection</a></code>)</span>
+  <span id="searchworks" class="field-name connection-name anchored">searchWorks (<code><a href="/graphql-api/reference/object/workconnection">WorkConnection</a></code>)</span>
   <div class="description-wrapper">
    <p></p>
      <table class="arguments">
@@ -711,79 +711,71 @@
   </thead>
   <tbody>
   <tr>
-  <td><code>after</code></td>
+  <td><code class="anchored">after</code></td>
   <td>
     <code><a href="/graphql-api/reference/scalar/string">String</a></code>
   </td>
   <td>
-    <p></p>
-<p>Returns the elements in the list that come after the specified global ID.</p>
+    <p>Returns the elements in the list that come after the specified global ID.</p>
    </td>
   </tr>
   <tr>
-  <td><code>annictIds</code></td>
+  <td><code class="anchored">annictIds</code></td>
   <td>
     <code><a href="/graphql-api/reference/scalar/int">[Int!]</a></code>
   </td>
   <td>
-    <p></p>
    </td>
   </tr>
   <tr>
-  <td><code>before</code></td>
+  <td><code class="anchored">before</code></td>
   <td>
     <code><a href="/graphql-api/reference/scalar/string">String</a></code>
   </td>
   <td>
-    <p></p>
-<p>Returns the elements in the list that come before the specified global ID.</p>
+    <p>Returns the elements in the list that come before the specified global ID.</p>
    </td>
   </tr>
   <tr>
-  <td><code>first</code></td>
+  <td><code class="anchored">first</code></td>
   <td>
     <code><a href="/graphql-api/reference/scalar/int">Int</a></code>
   </td>
   <td>
-    <p></p>
-<p>Returns the first <em>n</em> elements from the list.</p>
+    <p>Returns the first <em>n</em> elements from the list.</p>
    </td>
   </tr>
   <tr>
-  <td><code>last</code></td>
+  <td><code class="anchored">last</code></td>
   <td>
     <code><a href="/graphql-api/reference/scalar/int">Int</a></code>
   </td>
   <td>
-    <p></p>
-<p>Returns the last <em>n</em> elements from the list.</p>
+    <p>Returns the last <em>n</em> elements from the list.</p>
    </td>
   </tr>
   <tr>
-  <td><code>orderBy</code></td>
+  <td><code class="anchored">orderBy</code></td>
   <td>
     <code><a href="/graphql-api/reference/input_object/workorder">WorkOrder</a></code>
   </td>
   <td>
-    <p></p>
    </td>
   </tr>
   <tr>
-  <td><code>seasons</code></td>
+  <td><code class="anchored">seasons</code></td>
   <td>
     <code><a href="/graphql-api/reference/scalar/string">[String!]</a></code>
   </td>
   <td>
-    <p></p>
    </td>
   </tr>
   <tr>
-  <td><code>titles</code></td>
+  <td><code class="anchored">titles</code></td>
   <td>
     <code><a href="/graphql-api/reference/scalar/string">[String!]</a></code>
   </td>
   <td>
-    <p></p>
    </td>
   </tr>
   </tbody>
@@ -793,7 +785,7 @@
 <h2>
 <a id="fields" class="anchor" href="#fields" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fields</h2>
 <div class="field-entry ">
-  <span id="node" class="field-name">node (<code><a href="/graphql-api/reference/interface/node">Node</a></code>)</span>
+  <span id="node" class="field-name anchored">node (<code><a href="/graphql-api/reference/interface/node">Node</a></code>)</span>
   <div class="description-wrapper">
   <p>Fetches an object given its ID.</p>
    <table class="arguments">
@@ -806,13 +798,12 @@
   </thead>
   <tbody>
   <tr>
-  <td><code>id</code></td>
+  <td><code class="anchored">id</code></td>
   <td>
     <code><a href="/graphql-api/reference/scalar/id">ID!</a></code>
   </td>
   <td>
-    <p></p>
-<p>ID of the object.</p>
+    <p>ID of the object.</p>
    </td>
   </tr>
   </tbody>
@@ -820,7 +811,7 @@
   </div>
 </div>
 <div class="field-entry ">
-  <span id="nodes" class="field-name">nodes (<code><a href="/graphql-api/reference/interface/node">[Node]!</a></code>)</span>
+  <span id="nodes" class="field-name anchored">nodes (<code><a href="/graphql-api/reference/interface/node">[Node]!</a></code>)</span>
   <div class="description-wrapper">
   <p>Fetches a list of objects given a list of IDs.</p>
    <table class="arguments">
@@ -833,13 +824,12 @@
   </thead>
   <tbody>
   <tr>
-  <td><code>ids</code></td>
+  <td><code class="anchored">ids</code></td>
   <td>
     <code><a href="/graphql-api/reference/scalar/id">[ID!]!</a></code>
   </td>
   <td>
-    <p></p>
-<p>IDs of the objects.</p>
+    <p>IDs of the objects.</p>
    </td>
   </tr>
   </tbody>
@@ -847,7 +837,7 @@
   </div>
 </div>
 <div class="field-entry ">
-  <span id="user" class="field-name">user (<code><a href="/graphql-api/reference/object/user">User</a></code>)</span>
+  <span id="user" class="field-name anchored">user (<code><a href="/graphql-api/reference/object/user">User</a></code>)</span>
   <div class="description-wrapper">
    <table class="arguments">
   <thead>
@@ -859,12 +849,11 @@
   </thead>
   <tbody>
   <tr>
-  <td><code>username</code></td>
+  <td><code class="anchored">username</code></td>
   <td>
     <code><a href="/graphql-api/reference/scalar/string">String!</a></code>
   </td>
   <td>
-    <p></p>
    </td>
   </tr>
   </tbody>
@@ -872,7 +861,7 @@
   </div>
 </div>
 <div class="field-entry ">
-  <span id="viewer" class="field-name">viewer (<code><a href="/graphql-api/reference/object/user">User</a></code>)</span>
+  <span id="viewer" class="field-name anchored">viewer (<code><a href="/graphql-api/reference/object/user">User</a></code>)</span>
   <div class="description-wrapper">
   </div>
 </div>

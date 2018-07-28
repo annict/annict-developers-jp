@@ -16,7 +16,7 @@
         visible: 'hover',
         icon: '¶'
       };
-      anchors.add('h3');
+      anchors.add('h2, h3, h4, h5, h6, .anchored');
     });
 
     </script>
@@ -699,36 +699,27 @@
 <h2>
 <a id="fields" class="anchor" href="#fields" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fields</h2>
 <div class="field-entry ">
-  <span id="name" class="field-name">name (<code><a href="/graphql-api/reference/scalar/string">String!</a></code>)</span>
+  <span id="name" class="field-name anchored">name (<code><a href="/graphql-api/reference/scalar/string">String!</a></code>)</span>
   <div class="description-wrapper">
   </div>
 </div>
 <div class="field-entry ">
-  <span id="description" class="field-name">description (<code><a href="/graphql-api/reference/scalar/string">String</a></code>)</span>
+  <span id="description" class="field-name anchored">description (<code><a href="/graphql-api/reference/scalar/string">String</a></code>)</span>
   <div class="description-wrapper">
   </div>
 </div>
 <div class="field-entry ">
-  <span id="locations" class="field-name">locations (<code><a href="/graphql-api/reference/enum/__directivelocation">[__DirectiveLocation!]!</a></code>)</span>
+  <span id="locations" class="field-name anchored">locations (<code><a href="/graphql-api/reference/enum/__directivelocation">[__DirectiveLocation!]!</a></code>)</span>
   <div class="description-wrapper">
   </div>
 </div>
 <div class="field-entry ">
-  <span id="args" class="field-name">args (<code><a href="/graphql-api/reference/object/__inputvalue">[__InputValue!]!</a></code>)</span>
+  <span id="args" class="field-name anchored">args (<code><a href="/graphql-api/reference/object/__inputvalue">[__InputValue!]!</a></code>)</span>
   <div class="description-wrapper">
   </div>
 </div>
 <div class="field-entry ">
-  <span id="onoperation" class="field-name">onOperation (<code><a href="/graphql-api/reference/scalar/boolean">Boolean!</a></code>)</span>
-  <div class="description-wrapper">
-   <div class="deprecation-notice ">
-    <span class="deprecation-title">Deprecation notice</span>
-    <p>Use <code>locations</code>.</p>
-  </div>
-  </div>
-</div>
-<div class="field-entry ">
-  <span id="onfragment" class="field-name">onFragment (<code><a href="/graphql-api/reference/scalar/boolean">Boolean!</a></code>)</span>
+  <span id="onoperation" class="field-name anchored">onOperation (<code><a href="/graphql-api/reference/scalar/boolean">Boolean!</a></code>)</span>
   <div class="description-wrapper">
    <div class="deprecation-notice ">
     <span class="deprecation-title">Deprecation notice</span>
@@ -737,7 +728,16 @@
   </div>
 </div>
 <div class="field-entry ">
-  <span id="onfield" class="field-name">onField (<code><a href="/graphql-api/reference/scalar/boolean">Boolean!</a></code>)</span>
+  <span id="onfragment" class="field-name anchored">onFragment (<code><a href="/graphql-api/reference/scalar/boolean">Boolean!</a></code>)</span>
+  <div class="description-wrapper">
+   <div class="deprecation-notice ">
+    <span class="deprecation-title">Deprecation notice</span>
+    <p>Use <code>locations</code>.</p>
+  </div>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="onfield" class="field-name anchored">onField (<code><a href="/graphql-api/reference/scalar/boolean">Boolean!</a></code>)</span>
   <div class="description-wrapper">
    <div class="deprecation-notice ">
     <span class="deprecation-title">Deprecation notice</span>

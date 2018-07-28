@@ -16,7 +16,7 @@
         visible: 'hover',
         icon: '¶'
       };
-      anchors.add('h3');
+      anchors.add('h2, h3, h4, h5, h6, .anchored');
     });
 
     </script>
@@ -703,7 +703,7 @@
 <h2>
 <a id="connections" class="anchor" href="#connections" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Connections</h2>
 <div class="field-entry ">
-  <span id="records" class="field-name connection-name">records (<code><a href="/graphql-api/reference/object/recordconnection">RecordConnection</a></code>)</span>
+  <span id="records" class="field-name connection-name anchored">records (<code><a href="/graphql-api/reference/object/recordconnection">RecordConnection</a></code>)</span>
   <div class="description-wrapper">
    <p></p>
      <table class="arguments">
@@ -716,61 +716,55 @@
   </thead>
   <tbody>
   <tr>
-  <td><code>after</code></td>
+  <td><code class="anchored">after</code></td>
   <td>
     <code><a href="/graphql-api/reference/scalar/string">String</a></code>
   </td>
   <td>
-    <p></p>
-<p>Returns the elements in the list that come after the specified global ID.</p>
+    <p>Returns the elements in the list that come after the specified global ID.</p>
    </td>
   </tr>
   <tr>
-  <td><code>before</code></td>
+  <td><code class="anchored">before</code></td>
   <td>
     <code><a href="/graphql-api/reference/scalar/string">String</a></code>
   </td>
   <td>
-    <p></p>
-<p>Returns the elements in the list that come before the specified global ID.</p>
+    <p>Returns the elements in the list that come before the specified global ID.</p>
    </td>
   </tr>
   <tr>
-  <td><code>first</code></td>
+  <td><code class="anchored">first</code></td>
   <td>
     <code><a href="/graphql-api/reference/scalar/int">Int</a></code>
   </td>
   <td>
-    <p></p>
-<p>Returns the first <em>n</em> elements from the list.</p>
+    <p>Returns the first <em>n</em> elements from the list.</p>
    </td>
   </tr>
   <tr>
-  <td><code>hasComment</code></td>
+  <td><code class="anchored">hasComment</code></td>
   <td>
     <code><a href="/graphql-api/reference/scalar/boolean">Boolean</a></code>
   </td>
   <td>
-    <p></p>
    </td>
   </tr>
   <tr>
-  <td><code>last</code></td>
+  <td><code class="anchored">last</code></td>
   <td>
     <code><a href="/graphql-api/reference/scalar/int">Int</a></code>
   </td>
   <td>
-    <p></p>
-<p>Returns the last <em>n</em> elements from the list.</p>
+    <p>Returns the last <em>n</em> elements from the list.</p>
    </td>
   </tr>
   <tr>
-  <td><code>orderBy</code></td>
+  <td><code class="anchored">orderBy</code></td>
   <td>
     <code><a href="/graphql-api/reference/input_object/recordorder">RecordOrder</a></code>
   </td>
   <td>
-    <p></p>
    </td>
   </tr>
   </tbody>
@@ -780,67 +774,67 @@
 <h2>
 <a id="fields" class="anchor" href="#fields" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fields</h2>
 <div class="field-entry ">
-  <span id="annictid" class="field-name">annictId (<code><a href="/graphql-api/reference/scalar/int">Int!</a></code>)</span>
+  <span id="annictid" class="field-name anchored">annictId (<code><a href="/graphql-api/reference/scalar/int">Int!</a></code>)</span>
   <div class="description-wrapper">
   </div>
 </div>
 <div class="field-entry ">
-  <span id="id" class="field-name">id (<code><a href="/graphql-api/reference/scalar/id">ID!</a></code>)</span>
+  <span id="id" class="field-name anchored">id (<code><a href="/graphql-api/reference/scalar/id">ID!</a></code>)</span>
   <div class="description-wrapper">
   </div>
 </div>
 <div class="field-entry ">
-  <span id="nextepisode" class="field-name">nextEpisode (<code><a href="/graphql-api/reference/object/episode">Episode</a></code>)</span>
+  <span id="nextepisode" class="field-name anchored">nextEpisode (<code><a href="/graphql-api/reference/object/episode">Episode</a></code>)</span>
   <div class="description-wrapper">
   </div>
 </div>
 <div class="field-entry ">
-  <span id="number" class="field-name">number (<code><a href="/graphql-api/reference/scalar/int">Int</a></code>)</span>
+  <span id="number" class="field-name anchored">number (<code><a href="/graphql-api/reference/scalar/int">Int</a></code>)</span>
   <div class="description-wrapper">
   </div>
 </div>
 <div class="field-entry ">
-  <span id="numbertext" class="field-name">numberText (<code><a href="/graphql-api/reference/scalar/string">String</a></code>)</span>
+  <span id="numbertext" class="field-name anchored">numberText (<code><a href="/graphql-api/reference/scalar/string">String</a></code>)</span>
   <div class="description-wrapper">
   </div>
 </div>
 <div class="field-entry ">
-  <span id="prevepisode" class="field-name">prevEpisode (<code><a href="/graphql-api/reference/object/episode">Episode</a></code>)</span>
+  <span id="prevepisode" class="field-name anchored">prevEpisode (<code><a href="/graphql-api/reference/object/episode">Episode</a></code>)</span>
   <div class="description-wrapper">
   </div>
 </div>
 <div class="field-entry ">
-  <span id="recordcommentscount" class="field-name">recordCommentsCount (<code><a href="/graphql-api/reference/scalar/int">Int!</a></code>)</span>
+  <span id="recordcommentscount" class="field-name anchored">recordCommentsCount (<code><a href="/graphql-api/reference/scalar/int">Int!</a></code>)</span>
   <div class="description-wrapper">
   </div>
 </div>
 <div class="field-entry ">
-  <span id="recordscount" class="field-name">recordsCount (<code><a href="/graphql-api/reference/scalar/int">Int!</a></code>)</span>
+  <span id="recordscount" class="field-name anchored">recordsCount (<code><a href="/graphql-api/reference/scalar/int">Int!</a></code>)</span>
   <div class="description-wrapper">
   </div>
 </div>
 <div class="field-entry ">
-  <span id="sortnumber" class="field-name">sortNumber (<code><a href="/graphql-api/reference/scalar/int">Int!</a></code>)</span>
+  <span id="sortnumber" class="field-name anchored">sortNumber (<code><a href="/graphql-api/reference/scalar/int">Int!</a></code>)</span>
   <div class="description-wrapper">
   </div>
 </div>
 <div class="field-entry ">
-  <span id="title" class="field-name">title (<code><a href="/graphql-api/reference/scalar/string">String</a></code>)</span>
+  <span id="title" class="field-name anchored">title (<code><a href="/graphql-api/reference/scalar/string">String</a></code>)</span>
   <div class="description-wrapper">
   </div>
 </div>
 <div class="field-entry ">
-  <span id="viewerdidtrack" class="field-name">viewerDidTrack (<code><a href="/graphql-api/reference/scalar/boolean">Boolean!</a></code>)</span>
+  <span id="viewerdidtrack" class="field-name anchored">viewerDidTrack (<code><a href="/graphql-api/reference/scalar/boolean">Boolean!</a></code>)</span>
   <div class="description-wrapper">
   </div>
 </div>
 <div class="field-entry ">
-  <span id="viewerrecordscount" class="field-name">viewerRecordsCount (<code><a href="/graphql-api/reference/scalar/int">Int!</a></code>)</span>
+  <span id="viewerrecordscount" class="field-name anchored">viewerRecordsCount (<code><a href="/graphql-api/reference/scalar/int">Int!</a></code>)</span>
   <div class="description-wrapper">
   </div>
 </div>
 <div class="field-entry ">
-  <span id="work" class="field-name">work (<code><a href="/graphql-api/reference/object/work">Work!</a></code>)</span>
+  <span id="work" class="field-name anchored">work (<code><a href="/graphql-api/reference/object/work">Work!</a></code>)</span>
   <div class="description-wrapper">
   </div>
 </div>

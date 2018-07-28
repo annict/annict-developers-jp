@@ -16,7 +16,7 @@
         visible: 'hover',
         icon: '¶'
       };
-      anchors.add('h3');
+      anchors.add('h2, h3, h4, h5, h6, .anchored');
     });
 
     </script>
@@ -697,42 +697,42 @@
 <p>An enum describing what kind of type a given <code>__Type</code> is.</p>
 <h3 id="fields">
 <a id="values" class="anchor" href="#values" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Values</h3>
-  <h4 id="scalar" class="name">
+  <h4 id="scalar" class="name anchored">
 <a id="scalar" class="anchor" href="#scalar" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SCALAR</h4>
   <div class="description-wrapper">
    <p>Indicates this type is a scalar.</p>
   </div>
-  <h4 id="object" class="name">
+  <h4 id="object" class="name anchored">
 <a id="object" class="anchor" href="#object" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OBJECT</h4>
   <div class="description-wrapper">
    <p>Indicates this type is an object. `fields` and `interfaces` are valid fields.</p>
   </div>
-  <h4 id="interface" class="name">
+  <h4 id="interface" class="name anchored">
 <a id="interface" class="anchor" href="#interface" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>INTERFACE</h4>
   <div class="description-wrapper">
    <p>Indicates this type is an interface. `fields` and `possibleTypes` are valid fields.</p>
   </div>
-  <h4 id="union" class="name">
+  <h4 id="union" class="name anchored">
 <a id="union" class="anchor" href="#union" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>UNION</h4>
   <div class="description-wrapper">
    <p>Indicates this type is a union. `possibleTypes` is a valid field.</p>
   </div>
-  <h4 id="enum" class="name">
+  <h4 id="enum" class="name anchored">
 <a id="enum" class="anchor" href="#enum" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ENUM</h4>
   <div class="description-wrapper">
    <p>Indicates this type is an enum. `enumValues` is a valid field.</p>
   </div>
-  <h4 id="input_object" class="name">
+  <h4 id="input_object" class="name anchored">
 <a id="input_object" class="anchor" href="#input_object" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>INPUT_OBJECT</h4>
   <div class="description-wrapper">
    <p>Indicates this type is an input object. `inputFields` is a valid field.</p>
   </div>
-  <h4 id="list" class="name">
+  <h4 id="list" class="name anchored">
 <a id="list" class="anchor" href="#list" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LIST</h4>
   <div class="description-wrapper">
    <p>Indicates this type is a list. `ofType` is a valid field.</p>
   </div>
-  <h4 id="non_null" class="name">
+  <h4 id="non_null" class="name anchored">
 <a id="non_null" class="anchor" href="#non_null" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NON_NULL</h4>
   <div class="description-wrapper">
    <p>Indicates this type is a non-null. `ofType` is a valid field.</p>
