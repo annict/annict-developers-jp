@@ -1,0 +1,23 @@
+@charset 'utf-8';
+
+@import 'variables';
+@import 'bootstrap';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: .02rem;
+  text-rendering: optimizeLegibility;
+}
+
+@import 'projects/application';

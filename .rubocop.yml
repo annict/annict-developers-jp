@@ -1,0 +1,80 @@
+AllCops:
+  TargetRubyVersion: 2.4
+  Exclude:
+    - "**/*.slim"
+    - "vendor/**/*"
+    - "db/schema.rb"
+
+Layout/CaseIndentation:
+  EnforcedStyle: end
+
+Layout/EmptyLineAfterMagicComment:
+  Enabled: false
+
+Lint/EndAlignment:
+  EnforcedStyleAlignWith: variable
+
+Metrics/LineLength:
+  Max: 120
+  Exclude:
+    - "**/*.jbuilder"
+  # Ignore lines with comments
+  # http://stackoverflow.com/questions/26342570/rubocop-linelength-how-to-ignore-lines-with-comments
+  IgnoredPatterns: ['\A#']
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Style/AlignArray:
+  Enabled: false
+
+Style/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/DotPosition:
+  EnforcedStyle: trailing
+
+Style/IndentArray:
+  EnforcedStyle: consistent
+
+Style/Lambda:
+  Enabled: false
+
+Style/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Style/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    "%":  ()
+    "%i": ()
+    "%q": ()
+    "%Q": ()
+    "%r": "{}"
+    "%s": ()
+    "%w": ()
+    "%W": ()
+    "%x": ()
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes

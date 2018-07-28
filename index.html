@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<div class="p-application__content">
+  <div class="jumbotron jumbotron-fluid mb-5">
+    <div class="container">
+      <h1 class="display-4">Build your app on Annict's platform</h1>
+      <p class="lead">Not sure where to start? We’ve put together some handy guides and reference documentation you can use to start building.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">GraphQL API</h5>
+            <p class="card-text">A powerful, flexible and latest API.</p>
+            <a href="/graphql-api" class="btn btn-primary">
+              <i class="fas fa-chevron-right mr-1"></i>
+              View Docs
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">REST API (Deprecated)</h5>
+            <p class="card-text">A first Annict's API.</p>
+            <a href="https://docs.annict.com/ja/" class="btn btn-primary">
+              <i class="fas fa-chevron-right mr-1"></i>
+              View Docs (Japanese)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="row">
+      <div class="col-6">
+        <h2 class="mb-3">Recent Blog Posts</h2>
+
+        <ul class="list-unstyled">
+          <li>
+            <span class="mr-3">Mar 16, 2018</span>
+            <a href="{{ post.url }}">Hello, developers!</a>
+          </li>
+          {% for post in site.posts %}
+            <li>
+              <span class="mr-3">{{ post.date | date: "%Y-%m-%d" }}</span>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+
+        <div class="text-right">
+          <a href="/blog" class="small">
+            <i class="fas fa-chevron-right mr-1"></i>
+            View More Posts
+          </a>
+        </div>
+      </div>
+      <div class="col-6">
+        <a class="twitter-timeline" href="https://twitter.com/AnnictJP?ref_src=twsrc%5Etfw">Tweets by AnnictJP</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include footer.html %}
