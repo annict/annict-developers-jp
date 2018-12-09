@@ -1,8 +1,8 @@
-# Annict Developers
+# Annict Developers (日本語)
 
-## Running the site
+## セットアップ
 
 ```
-$ bundle install
-$ bundle exec jekyll s
+$ docker-compose build vuepress
+$ docker-compose up
 ```
