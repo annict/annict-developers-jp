@@ -10,6 +10,7 @@ services:
       - .env.development
     ports:
       - 5000:5000
+      - 5001:5001
     volumes:
       - .:/developers-jp
       - node_modules_vol:/developers-jp/node_modules
