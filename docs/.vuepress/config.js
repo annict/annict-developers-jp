@@ -2,7 +2,6 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
-      { text: "ブログ", link: "/blog/" },
       {
         text: "GraphQL API",
         items: [
@@ -13,7 +12,10 @@ module.exports = {
           }
         ]
       },
-      { text: "REST API (非推奨)", link: "https://docs.annict.com/ja/" }
+      { text: "REST API (非推奨)", link: "https://docs.annict.com/ja/" },
+      { text: "ブログ", link: "/blog/" },
     ]
-  }
+  },
+
+  plugins: ["@vuepress/blog"]
 };

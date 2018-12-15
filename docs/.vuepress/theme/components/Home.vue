@@ -40,6 +40,11 @@
 
     <Content class="custom"/>
 
+    <div class="blog-list">
+      <h2>開発者向けブログ</h2>
+      <BlogList :limit="5" />
+    </div>
+
     <div
       class="footer"
       v-if="data.footer"
@@ -124,6 +129,15 @@ export default {
       color lighten($textColor, 10%)
     p
       color lighten($textColor, 25%)
+  .blog-list
+    padding-top 2.5rem
+    padding-bottom 2.5rem
+    border-top 1px solid $borderColor
+    h2
+      font-size 1.4rem
+      border-bottom none
+      padding-bottom 0
+      color lighten($textColor, 10%)
   .footer
     padding 2.5rem
     border-top 1px solid $borderColor
