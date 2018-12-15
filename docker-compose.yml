@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  vuepress:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: /bin/ash -c 'yarn run docs:dev -p 5000'
+    env_file:
+      - .env.development
+    ports:
+      - 5000:5000
+      - 5001:5001
+    volumes:
+      - .:/developers-jp
+      - node_modules_vol:/developers-jp/node_modules
+
+volumes:
+  # Exclude the node_modules directory
+  # https://stackoverflow.com/questions/29181032/add-a-volume-to-docker-but-exclude-a-sub-folder
+  node_modules_vol:
