@@ -1,5 +1,7 @@
 module.exports = {
+  title: "Developers",
   themeConfig: {
+    logo: "/logo.png",
     nav: [
       { text: "Home", link: "/" },
       {
