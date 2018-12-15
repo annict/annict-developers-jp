@@ -16,6 +16,7 @@ module.exports = {
       },
       { text: "REST API (非推奨)", link: "https://docs.annict.com/ja/" },
       { text: "ブログ", link: "/blog/" },
+      { text: "コミュニティ", link: "/community/" }
     ]
   },
 
