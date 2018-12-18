@@ -22,7 +22,8 @@ module.exports = {
       ["/graphql-api/", "はじめに"],
       ["/graphql-api/setup/", "セットアップ"],
       ["/graphql-api/send-query/", "クエリを送信する"]
-    ]
+    ],
+    search: false
   },
 
   plugins: ["@vuepress/blog"]
