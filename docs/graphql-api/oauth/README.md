@@ -1,29 +1,21 @@
-# アクセストークンを生成する
+# OAuth認証
 
-GraphQL APIにアクセスするにはAnnictのアクセストークンが必要になります。アクセストークンを生成する方法は2つあります。
-
-1. アプリケーションを作ってOAuth認証する
-2. 「個人用アクセストークン」を利用する
-
-
-## OAuth認証する
-
-### クライアントアプリケーションを作成する
+## クライアントアプリケーションを作成する
 
 OAuthで使用するクライアントIDなどを保持するクライアントアプリケーションを作成します。クライアントアプリケーションは [https://annict.jp/oauth/applications](https://annict.jp/oauth/applications) から作成することができます。
 
 
-### 認可のリクエストを送る
+## 認可のリクエストを送る
 
 Annict APIが提供するリソースにどのような権限でアクセスするかをAnnictに伝えるため、認可のためのリクエストを送る必要があります。
 
 
-#### GET /oauth/authorize
+### GET /oauth/authorize
 
 アクセス許可を求めるページが表示されます。
 
 
-##### パラメータ
+#### パラメータ
 
 | 名前 | 概要 |
 | --- | --- |
@@ -33,7 +25,7 @@ Annict APIが提供するリソースにどのような権限でアクセスす�
 | scope | リソースにアクセスする際の権限を指定します。デフォルトは `read` (読み込み専用) になっています。書き込み権限も付与したい場合は `read write` を指定してください。 |
 
 
-##### リクエスト例
+#### リクエスト例
 
 下記の例では `redirect_uri` に `urn:ietf:wg:oauth:2.0:oob` が指定されているため、認可後のページに認証コードが表示されます。
 
@@ -48,17 +40,17 @@ GET /oauth/authorize?client_id=f96b162be2c54b467f7583a0e141d0df99bf16318146f9bf5
 ```
 
 
-### アクセストークンを取得する
+## アクセストークンを取得する
 
 認可後に取得した認証コードを使用して、アクセストークンを取得します。
 
 
-#### POST /oauth/token
+### POST /oauth/token
 
 アクセストークンを発行します。
 
 
-##### パラメータ
+#### パラメータ
 
 | 名前 | 概要 |
 | --- | --- |
@@ -69,7 +61,7 @@ GET /oauth/authorize?client_id=f96b162be2c54b467f7583a0e141d0df99bf16318146f9bf5
 | code | **[必須]** 認可後に取得した認証コードを指定します。 |
 
 
-##### リクエスト例
+#### リクエスト例
 
 ```bash
 $ curl -F client_id=f96b162be2c54b467f7583a0e141d0df99bf16318146f9bf53116d82b145fde6 \
@@ -81,7 +73,7 @@ $ curl -F client_id=f96b162be2c54b467f7583a0e141d0df99bf16318146f9bf53116d82b145
 ```
 
 
-##### レスポンス例
+#### レスポンス例
 
 ```
 HTTP/1.1 200 OK
@@ -98,14 +90,14 @@ Content-Type: application/json; charset=utf-8
 ```
 
 
-### アクセストークンの情報を取得する
+## アクセストークンの情報を取得する
 
-#### GET /oauth/token/info
+### GET /oauth/token/info
 
 アクセストークンの情報を取得します。`Authorization` ヘッダにアクセストークンを渡してリクエストを送ります。
 
 
-##### リクエスト例
+#### リクエスト例
 
 ```bash
 $ curl -H "Authorization: Bearer 35372b2d866222ed33e355c36d86be498076e037a810ee72963819339c781f32" \
@@ -113,7 +105,7 @@ $ curl -H "Authorization: Bearer 35372b2d866222ed33e355c36d86be498076e037a810ee7
 ```
 
 
-##### レスポンス例
+#### レスポンス例
 
 ```
 HTTP/1.1 200 OK
@@ -133,14 +125,14 @@ Content-Type: application/json; charset=utf-8
 ```
 
 
-### アクセストークンを失効させる
+## アクセストークンを失効させる
 
-#### POST /oauth/revoke
+### POST /oauth/revoke
 
 アクセストークンを失効させます。`Authorization` ヘッダと `token` パラメータを渡してリクエストを送ります。
 
 
-##### パラメータ
+#### パラメータ
 
 | 名前 | 概要 |
 | --- | --- |
@@ -149,7 +141,7 @@ Content-Type: application/json; charset=utf-8
 | token | **[必須]** アクセストークンを指定します。 |
 
 
-##### リクエスト例
+#### リクエスト例
 
 ```bash
 $ curl -H "Authorization: Bearer 35372b2d866222ed33e355c36d86be498076e037a810ee72963819339c781f32" \
@@ -160,7 +152,7 @@ $ curl -H "Authorization: Bearer 35372b2d866222ed33e355c36d86be498076e037a810ee7
 ```
 
 
-##### レスポンス例
+#### レスポンス例
 
 ```
 HTTP/1.1 200 OK
@@ -170,23 +162,3 @@ Content-Type: application/json; charset=utf-8
 ```json
 {}
 ```
-
-
-## 個人用アクセストークンを生成する
-
-まず [https://annict.jp/settings/apps](https://annict.jp/settings/apps) にアクセスします。
-そして「個人用アクセストークン」の「新規作成」ボタンをクリックします。
-
-![image](https://user-images.githubusercontent.com/56767/50375744-ea01b000-0645-11e9-929c-5a29459721c5.png)
-
-作成ページに行くと下の画像のような入力欄が表示されます。
-「トークンの説明」には適当に利用用途などを入力します。
-「スコープ」は「読み込み専用」または「読み込み + 書き込み」のいずれかが選択できます。
-データを取得するだけであれば「読み込み専用」を、記録などの書き込みも行う場合は「読み込み + 書き込み」を選択してください。
-
-![image](https://user-images.githubusercontent.com/56767/50375751-fb4abc80-0645-11e9-9f2a-b3c9781ef1ce.png)
-
-「作成する」ボタンを押すと以下のようにアクセストークンが表示されます。
-ページをリロードなどすると表示されなくなるので、クリップボードにコピーするなどして手元に保存してください。
-
-![image](https://user-images.githubusercontent.com/56767/50375756-056cbb00-0646-11e9-8211-7854c244e951.png)
