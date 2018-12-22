@@ -20,8 +20,12 @@ module.exports = {
     ],
     sidebar: [
       ["/graphql-api/", "はじめに"],
-      ["/graphql-api/generating-access-token/", "アクセストークンを生成する"],
-      ["/graphql-api/send-query/", "クエリを送信する"]
+      ["/graphql-api/setup/", "セットアップ"],
+      ["/graphql-api/query/", "データを取得する (Query)"],
+      ["/graphql-api/mutation/", "データを保存する (Mutation)"],
+      ["/graphql-api/oauth/", "OAuth認証"],
+      ["/graphql-api/personal-access-token/", "個人用アクセストークン"],
+      ["/graphql-api/faq/", "よくありそうな質問"]
     ],
     search: false
   },
