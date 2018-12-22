@@ -7,6 +7,8 @@ publishedOn: 2018-12-23
 
 # Annict Developersを公開しました
 
+<BlogPublishedDate />
+
 今まで [GitBook](https://www.gitbook.com) を使用して [Annict Docs](https://docs.annict.com/ja/) というドキュメントサイトを公開していました。
 REST APIのドキュメントだけを公開していたときは良かったのですが、GraphQL APIのドキュメントを追加したときサイドバーの構成が中々見づらくなりました。また、GraphQL APIのリファレンスを手動で更新するという厳しい管理体制でした。
 
