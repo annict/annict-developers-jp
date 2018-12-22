@@ -10,7 +10,10 @@ module.exports = {
           { text: "ドキュメント", link: "/graphql-api/" },
           {
             text: "APIリファレンス",
-            link: "http://annict.testjp:5000/graphql-api/reference/"
+            link:
+              process.env.NODE_ENV === "development"
+                ? "http://annict.testjp:5000/graphql-api/reference/"
+                : "https://developers.annict.jp/graphql-api/reference/"
           }
         ]
       },
