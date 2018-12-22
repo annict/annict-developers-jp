@@ -20,7 +20,7 @@ module.exports = {
     ],
     sidebar: [
       ["/graphql-api/", "はじめに"],
-      ["/graphql-api/setup/", "セットアップ"],
+      ["/graphql-api/generating-access-token/", "アクセストークンを生成する"],
       ["/graphql-api/send-query/", "クエリを送信する"]
     ],
     search: false
