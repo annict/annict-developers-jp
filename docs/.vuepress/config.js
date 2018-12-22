@@ -1,5 +1,6 @@
 module.exports = {
   title: "Developers",
+  theme: "@vuepress/theme-default",
   themeConfig: {
     logo: "/logo.png",
     nav: [
