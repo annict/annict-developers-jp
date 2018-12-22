@@ -2,7 +2,7 @@
 
 ## `annictId` と `id` の違いは？
 
-[GraphQL APIリファレンス](/graphql-api/reference/)にはよく `annictId` というフィールドと `id` というフィールドが出てきます。
+<a href="/graphql-api/reference/">GraphQL APIリファレンス</a>にはよく `annictId` というフィールドと `id` というフィールドが出てきます。
 `annictId` とは、Annictのデータベース内の各テーブルに存在する固有のIDになります。
 例えば作品「[エロマンガ先生](https://annict.jp/works/4714)」の `annictId` は `4714` になります。
 (Railsがデフォルトで提供するプライマリキーです。)
