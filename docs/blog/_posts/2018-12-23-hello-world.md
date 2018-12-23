@@ -1,11 +1,11 @@
 ---
-title: Annict Developersを公開しました
+title: 開発者向けのポータルサイト「Annict Developers」を公開しました
 sidebar: false
 permalink: /blog/2018-12-23-hello-world/
 publishedOn: 2018-12-23
 ---
 
-# Annict Developersを公開しました
+# 開発者向けのポータルサイト「Annict Developers」を公開しました
 
 <BlogPublishedDate />
 
