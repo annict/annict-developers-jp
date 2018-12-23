@@ -1,5 +1,5 @@
 ---
-title: Annict Developers Blog
+title: Blog
 sidebar: false
 ---
 

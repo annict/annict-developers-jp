@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Developers",
+  title: "Annict Developers",
   theme: "@vuepress/theme-default",
   themeConfig: {
     logo: "/logo.png",
