@@ -34,7 +34,8 @@
         :key="index"
       >
         <h2>{{ feature.title }}</h2>
-        <p>{{ feature.details }}</p>
+        <p class="details">{{ feature.details }}</p>
+        <p class="link" v-html="feature.link" v-if="feature.link"></p>
       </div>
     </div>
 
@@ -129,6 +130,11 @@ export default {
       color lighten($textColor, 10%)
     p
       color lighten($textColor, 25%)
+    .details
+      margin-bottom .5rem
+    .link
+      text-align right
+      margin-top 0
   .blog-list
     padding-top 2.5rem
     padding-bottom 2.5rem
