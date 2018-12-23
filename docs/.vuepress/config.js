@@ -6,7 +6,7 @@ module.exports = {
     nav: [
       { text: "Home", link: "/" },
       {
-        text: "GraphQL API",
+        text: "GraphQL API (β)",
         items: [
           { text: "ドキュメント", link: "/graphql-api/" },
           {
@@ -18,7 +18,7 @@ module.exports = {
           }
         ]
       },
-      { text: "REST API (非推奨)", link: "https://docs.annict.com/ja/" },
+      { text: "REST API", link: "https://docs.annict.com/ja/" },
       { text: "ブログ", link: "/blog/" },
       { text: "コミュニティ", link: "/community/" }
     ],
