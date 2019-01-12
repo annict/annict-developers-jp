@@ -5,6 +5,5 @@
 ## セットアップ
 
 ```
-$ docker-compose build vuepress
-$ docker-compose up
+$ docker-compose up --build
 ```
