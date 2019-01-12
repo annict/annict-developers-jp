@@ -19,6 +19,6 @@ Annict APIに下記データが取得できるエンドポイントを追加し�
 6. スタッフ (Staff)
 
 REST APIとGraphQL APIどちらからもデータが取得できるようになっています。
-REST APIの詳細は[Annict Docs](https://docs.annict.com/ja/)を、GraphQL APIの詳細は[リファレンス](/graphql-api/reference/)からご参照ください。
+REST APIの詳細は[Annict Docs](https://docs.annict.com/ja/?20190113)を、GraphQL APIの詳細は<a href="/graphql-api/reference/">リファレンス</a>からご参照ください。
 
 色んなデータが取得できるようになったAnnictをよろしくお願いします。
