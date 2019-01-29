@@ -2,7 +2,7 @@
 title: APIに人物/団体/キャラクターなどの情報が取得できるエンドポイントを追加しました
 sidebar: false
 permalink: /blog/2019-01-13-api-update/
-publishedOn: 2018-01-13
+publishedOn: 2019-01-13
 ---
 
 # APIに人物/団体/キャラクターなどの情報が取得できるエンドポイントを追加しました
