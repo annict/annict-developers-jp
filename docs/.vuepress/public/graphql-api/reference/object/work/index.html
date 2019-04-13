@@ -330,6 +330,34 @@
       
         
       <li>
+        <a href="/graphql-api/reference/object/seriesconnection/" class="sidebar-link">
+          SeriesConnection
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/seriesedge/" class="sidebar-link">
+          SeriesEdge
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/seriesworkconnection/" class="sidebar-link">
+          SeriesWorkConnection
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql-api/reference/object/seriesworkedge/" class="sidebar-link">
+          SeriesWorkEdge
+        </a>
+      </li>
+      
+        
+      <li>
         <a href="/graphql-api/reference/object/staff/" class="sidebar-link">
           Staff
         </a>
@@ -652,6 +680,13 @@
       
       
       <li>
+        <a href="/graphql-api/reference/enum/seriesworkorderfield/" class="sidebar-link">
+          SeriesWorkOrderField
+        </a>
+      </li>
+      
+      
+      <li>
         <a href="/graphql-api/reference/enum/stafforderfield/" class="sidebar-link">
           StaffOrderField
         </a>
@@ -806,6 +841,13 @@
       
       
       <li>
+        <a href="/graphql-api/reference/input_object/seriesworkorder/" class="sidebar-link">
+          SeriesWorkOrder
+        </a>
+      </li>
+      
+      
+      <li>
         <a href="/graphql-api/reference/input_object/stafforder/" class="sidebar-link">
           StaffOrder
         </a>
@@ -908,7 +950,6 @@
 <div class="field-entry ">
   <span id="casts" class="field-name connection-name anchored">casts (<code><a href="/graphql-api/reference/object/castconnection">CastConnection</a></code>)</span>
   <div class="description-wrapper">
-   <p></p>
      <table class="arguments">
   <thead>
   <tr>
@@ -969,7 +1010,6 @@
 <div class="field-entry ">
   <span id="episodes" class="field-name connection-name anchored">episodes (<code><a href="/graphql-api/reference/object/episodeconnection">EpisodeConnection</a></code>)</span>
   <div class="description-wrapper">
-   <p></p>
      <table class="arguments">
   <thead>
   <tr>
@@ -1030,7 +1070,6 @@
 <div class="field-entry ">
   <span id="programs" class="field-name connection-name anchored">programs (<code><a href="/graphql-api/reference/object/programconnection">ProgramConnection</a></code>)</span>
   <div class="description-wrapper">
-   <p></p>
      <table class="arguments">
   <thead>
   <tr>
@@ -1091,7 +1130,6 @@
 <div class="field-entry ">
   <span id="reviews" class="field-name connection-name anchored">reviews (<code><a href="/graphql-api/reference/object/reviewconnection">ReviewConnection</a></code>)</span>
   <div class="description-wrapper">
-   <p></p>
      <table class="arguments">
   <thead>
   <tr>
@@ -1158,9 +1196,60 @@
   </div>
 </div>
 <div class="field-entry ">
+  <span id="serieslist" class="field-name connection-name anchored">seriesList (<code><a href="/graphql-api/reference/object/seriesconnection">SeriesConnection</a></code>)</span>
+  <div class="description-wrapper">
+     <table class="arguments">
+  <thead>
+  <tr>
+    <th>Argument</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><code class="anchored">after</code></td>
+  <td>
+    <code><a href="/graphql-api/reference/scalar/string">String</a></code>
+  </td>
+  <td>
+    <p>Returns the elements in the list that come after the specified cursor.</p>
+   </td>
+  </tr>
+  <tr>
+  <td><code class="anchored">before</code></td>
+  <td>
+    <code><a href="/graphql-api/reference/scalar/string">String</a></code>
+  </td>
+  <td>
+    <p>Returns the elements in the list that come before the specified cursor.</p>
+   </td>
+  </tr>
+  <tr>
+  <td><code class="anchored">first</code></td>
+  <td>
+    <code><a href="/graphql-api/reference/scalar/int">Int</a></code>
+  </td>
+  <td>
+    <p>Returns the first <em>n</em> elements from the list.</p>
+   </td>
+  </tr>
+  <tr>
+  <td><code class="anchored">last</code></td>
+  <td>
+    <code><a href="/graphql-api/reference/scalar/int">Int</a></code>
+  </td>
+  <td>
+    <p>Returns the last <em>n</em> elements from the list.</p>
+   </td>
+  </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+<div class="field-entry ">
   <span id="staffs" class="field-name connection-name anchored">staffs (<code><a href="/graphql-api/reference/object/staffconnection">StaffConnection</a></code>)</span>
   <div class="description-wrapper">
-   <p></p>
      <table class="arguments">
   <thead>
   <tr>
