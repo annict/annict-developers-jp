@@ -1,4 +1,4 @@
-FROM node:10.14.1-alpine
+FROM node:10.16.0-alpine
 
 LABEL maintainer="https://annict.com/@shimbaco" \
       description="Developer portal site for Annict."
