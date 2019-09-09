@@ -883,9 +883,9 @@
     lodash.throttle "^4.1.1"
 
 "@vuepress/plugin-blog@^1.2.4":
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-blog/-/plugin-blog-1.2.4.tgz#3ff97eebb3044991cd0d0f780c02355f64fac4a2"
-  integrity sha512-I6OhDm66QDsRH7er3uYQGTglTQWvdZukqpvMHiMSAqqL6fcPGGxnsQTzhxUZMg1L3PTK2nmaGQL88tiIxYZhmQ==
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-blog/-/plugin-blog-1.2.5.tgz#08a5cf3dbe1c048082682922fda1bd3fd2fa3477"
+  integrity sha512-l6c6uF2lELZEjSROcm6hU6TRXpZgsXGj7klmZ1ousjaVWwMBFnEw/6Ak0U0lKlRyphii/oa3GjM5J6YWzzrivQ==
   dependencies:
     vuejs-paginate "^2.1.0"
 
